@@ -6,9 +6,9 @@ if (capitalize("hello") !== "Hello") {
 }
 assert.equal(capitalize(""), "");
 
-// if (capitalize("") !== "") {
-//   throw new Error("Функция работает неверно!");
-// }
+if (capitalize("") !== "") {
+  throw new Error("Функция работает неверно!");
+}
 assert.equal(capitalize("hello"), "Hello");
 
 console.log("Все тесты пройдены!");
